@@ -41,9 +41,9 @@ def buscar_dados_cep(cep):
         return {"CEP": cep_limpo, "Status": f"Erro de Conexão: {e}"}
 
 # --- INTERFACE WEB (Streamlit) ---
-st.set_page_config(page_title="📍 Consulta de CEPs em Lote", layout="centered")
+st.set_page_config(page_title="📍 Consulta de CEP's", layout="centered")
 
-st.title("Consulta de CEPs em Lote")
+st.title("📍 Consulta de CEPs")
 st.write("Carrega uma planilha Excel (`.xlsx` ou `.xls`) e retorna o endereço completo.")
 
 # Chave dinâmica para resetar o uploader via session_state
